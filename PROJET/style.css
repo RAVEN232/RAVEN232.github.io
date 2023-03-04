@@ -1,0 +1,106 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+#home{
+    background: url(animated_bg.gif);
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    height: 99vh;
+}
+
+nav{
+    background-color: #317c83;
+    font-family: arial;
+}
+
+ul .nav-item .nav-link:hover{
+    background-color: rgba(200, 198, 198, 0.859);
+    transition: 0.5s ease-in-out;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+.t .dropdown-item:hover{
+    background-color: rgba(108, 194, 165, 0.781);
+}
+
+#inpsrch{
+    height: 32px;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.444);
+    border:3px rgba(0, 0, 0, 0.69) solid;
+    border-radius: 20px;
+    color: rgb(23, 22, 22);
+    font-size: 16px;
+}
+
+#srch{
+    width: 100px;
+    border-radius: 20px;
+    background-color: rgba(240, 248, 255, 0.029);
+    border: 3px solid rgba(0, 0, 0, 0.69);
+    color: rgb(54, 54, 54);
+    font-size: 14px;
+    padding: 3px;
+    transition: 0.5s ease-in-out;
+}
+
+#srch:hover{
+    border: 3px solid rgb(13, 13, 13);
+    color: black;
+    background-color: rgba(74, 201, 188, 0.797);
+    font-weight: bolder;
+}
+
+
+#banner{
+   padding: 8%;
+   margin-left: 18%;
+}
+
+hr{
+    height: 10px;
+    background-color: rgb(4, 151, 102);
+}
+
+.hr1{
+    height: 2px;
+}
+
+h1{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.sub{
+    text-decoration:underline double 2px;
+}
+
+footer{
+    background: url(footer..jpg);
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    height: 450px;
+    color: rgba(255, 255, 255, 0.871);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer p{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(255, 255, 255, 0.741);
+    font-size: 18px;
+}
+
+.card-img-top {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+.card-img-top:hover {
+    transform: scale(1.26);
+  }
+  
