@@ -1,7 +1,15 @@
 *{
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
 #home{
     background: url(animated_bg.gif);
@@ -55,11 +63,78 @@ ul .nav-item .nav-link:hover{
     font-weight: bolder;
 }
 
+video{
+  border-radius: 100px 0 100px 0;
+  z-index: 1;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#solde{
+  color:white;
+  background-color: red;
+  text-align: center;
+  margin-top: 2%;
+  text-decoration: none;
+}
+
+.about{
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.brand{
+  width: 140px;
+  transition: transform 0.5s ease-in-out;
+}
+
+#about-us{
+  margin-bottom: 120px;
+  margin-top: 90px;
+}
+
+.bl{
+  background-color: black;
+  height: 2px;
+}
+
+.brand:hover{
+  padding: 10px;
+  border: black solid 3px;
+  border-radius: 10px;
+  transform: scale(1.24);
+}
+
+@media only screen and (max-width: 768px) {
+  #cupp {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #cup {
+    display: none;
+  }
+}
 
 #banner{
    padding: 8%;
    margin-left: 18%;
 }
+
 
 hr{
     height: 10px;
@@ -84,7 +159,6 @@ footer{
     background-size: cover;
     background-attachment: scroll;
     background-repeat: no-repeat;
-    height: 450px;
     color: rgba(255, 255, 255, 0.871);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -103,4 +177,217 @@ footer p{
 .card-img-top:hover {
     transform: scale(1.26);
   }
+
+.card-text{
+    font-size: 18px;
+    color: #0c763f;
+}
   
+.card-title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#livraison{
+    background-color: rgba(186, 130, 34, 0.585);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(70, 48, 10, 0.889);
+}
+
+.button-64{
+  margin-top: 40px;
+  align-items: center;
+  background-image: linear-gradient(144deg,#a67408, #6e3306 50%,#ddad36);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(186, 130, 34, 0.308) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 15px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: #2d7177;
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 18px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    min-width: 196px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+   .button-64{
+    margin-left: 20%;
+    margin-top: 50%;
+  }
+}
+
+
+/* CSS */
+.button-74 {
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #27ae60;
+  border-radius: 20px;
+  border-style: none;
+  box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 590;
+  letter-spacing: normal;
+  line-height: 1.2;
+  outline: none;
+  overflow: hidden;
+  padding: 13px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 200px;
+}
+
+.button-74:hover {
+  background-color: #1e8449;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+
+.button-74:active {
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+.button-74:hover {
+  box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+}
+
+.f{
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgba(255, 255, 255, 0.741);
+  font-size: 15px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-img{
+  width: 450px;
+}
+
+.popup-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 950px;
+  text-align: center;
+}
+
+.close-btn {
+  background-color: #ddd;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background-color: #bbb;
+}
+
+.qty-input {
+	color: black;
+	background: white;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+
+.product-qty,.qty-count {
+		background: transparent;
+		color: inherit;
+		font-weight: bold;
+		font-size: inherit;
+		border: none;
+		display: inline-block;
+		min-width: 0;
+		height: 2.5rem;
+		line-height: 1;
+}	
+
+:focus {
+	  outline: none;
+}
+
+
+	.product-qty {
+		width: 50px;
+		min-width: 0;
+		display: inline-block;
+		text-align: center;
+		appearance: textfield;		
+}
+
+.submit-btn{
+  margin-top: 19%;
+}
+
+.radio{
+  margin-right: 60%;
+}
